@@ -266,7 +266,7 @@ namespace CalculatorCR {
 			// 
 			// comboBox1
 			// 
-			this->comboBox1->AutoCompleteCustomSource->AddRange(gcnew cli::array< System::String^  >(2) { L"Àííóèòåòíûé ïëàòåæ", L"Äèôôåðåíöèðîâàííûé ïëàòåæ" });
+			this->comboBox1->AutoCompleteCustomSource->AddRange(gcnew cli::array< System::String^  >(2) { L"Аннуитетный платеж", L"Дифференцированный платеж" });
 			this->comboBox1->BackColor = System::Drawing::SystemColors::ActiveCaption;
 			this->comboBox1->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->comboBox1->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
@@ -279,7 +279,7 @@ namespace CalculatorCR {
 			this->comboBox1->Name = L"comboBox1";
 			this->comboBox1->Size = System::Drawing::Size(220, 25);
 			this->comboBox1->TabIndex = 16;
-			this->comboBox1->Text = L"Àííóèòåòíûé ïëàòåæ";
+			this->comboBox1->Text = L"Аннуитетный платеж";
 			this->comboBox1->SelectedIndexChanged += gcnew System::EventHandler(this, &MyForm::comboBox1_SelectedIndexChanged);
 			this->comboBox1->KeyPress += gcnew System::Windows::Forms::KeyPressEventHandler(this, &MyForm::comboBox1_KeyPress);
 			// 
@@ -292,7 +292,7 @@ namespace CalculatorCR {
 			this->button14->Name = L"button14";
 			this->button14->Size = System::Drawing::Size(138, 39);
 			this->button14->TabIndex = 29;
-			this->button14->Text = L"Ñáðîñ";
+			this->button14->Text = L"Сброс";
 			this->button14->UseVisualStyleBackColor = true;
 			this->button14->Click += gcnew System::EventHandler(this, &MyForm::button14_Click);
 			// 
@@ -338,10 +338,10 @@ namespace CalculatorCR {
 			this->Ìåñÿö->Font = (gcnew System::Drawing::Font(L"Times New Roman", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->Ìåñÿö->Location = System::Drawing::Point(240, 390);
-			this->Ìåñÿö->Name = L"Ìåñÿö";
+			this->Ìåñÿö->Name = L"Месяц";
 			this->Ìåñÿö->Size = System::Drawing::Size(53, 19);
 			this->Ìåñÿö->TabIndex = 33;
-			this->Ìåñÿö->Text = L"Ìåñÿö";
+			this->Ìåñÿö->Text = L"Месяц";
 			// 
 			// MyForm
 			// 
