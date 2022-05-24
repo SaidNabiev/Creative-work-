@@ -11,7 +11,7 @@ namespace CalculatorCR {
 
 
 	/// <summary>
-	/// Сводка для MyForm
+	/// Г‘ГўГ®Г¤ГЄГ  Г¤Г«Гї MyForm
 	/// </summary>
 	public ref class MyForm : public System::Windows::Forms::Form
 	{
@@ -20,13 +20,13 @@ namespace CalculatorCR {
 		{
 			InitializeComponent();
 			//
-			//TODO: добавьте код конструктора
+			//TODO: Г¤Г®ГЎГ ГўГјГІГҐ ГЄГ®Г¤ ГЄГ®Г­Г±ГІГ°ГіГЄГІГ®Г°Г 
 			//
 		}
 
 	protected:
 		/// <summary>
-		/// Освободить все используемые ресурсы.
+		/// ГЋГ±ГўГ®ГЎГ®Г¤ГЁГІГј ГўГ±ГҐ ГЁГ±ГЇГ®Г«ГјГ§ГіГҐГ¬Г»ГҐ Г°ГҐГ±ГіГ°Г±Г».
 		/// </summary>
 		~MyForm()
 		{
@@ -69,7 +69,7 @@ namespace CalculatorCR {
 	private: System::Windows::Forms::NumericUpDown^ numericUpDown1;
 	private: System::Windows::Forms::TextBox^ textBox4;
 	private: System::Windows::Forms::NumericUpDown^ numericUpDown4;
-	private: System::Windows::Forms::Label^ Месяц;
+	private: System::Windows::Forms::Label^ ГЊГҐГ±ГїГ¶;
 
 
 
@@ -85,14 +85,14 @@ namespace CalculatorCR {
 
 	private:
 		/// <summary>
-		/// Обязательная переменная конструктора.
+		/// ГЋГЎГїГ§Г ГІГҐГ«ГјГ­Г Гї ГЇГҐГ°ГҐГ¬ГҐГ­Г­Г Гї ГЄГ®Г­Г±ГІГ°ГіГЄГІГ®Г°Г .
 		/// </summary>
 
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
-		/// Требуемый метод для поддержки конструктора — не изменяйте 
-		/// содержимое этого метода с помощью редактора кода.
+		/// Г’Г°ГҐГЎГіГҐГ¬Г»Г© Г¬ГҐГІГ®Г¤ Г¤Г«Гї ГЇГ®Г¤Г¤ГҐГ°Г¦ГЄГЁ ГЄГ®Г­Г±ГІГ°ГіГЄГІГ®Г°Г  вЂ” Г­ГҐ ГЁГ§Г¬ГҐГ­ГїГ©ГІГҐ 
+		/// Г±Г®Г¤ГҐГ°Г¦ГЁГ¬Г®ГҐ ГЅГІГ®ГЈГ® Г¬ГҐГІГ®Г¤Г  Г± ГЇГ®Г¬Г®Г№ГјГѕ Г°ГҐГ¤Г ГЄГІГ®Г°Г  ГЄГ®Г¤Г .
 		/// </summary>
 		void InitializeComponent(void)
 		{
@@ -114,7 +114,7 @@ namespace CalculatorCR {
 			this->numericUpDown1 = (gcnew System::Windows::Forms::NumericUpDown());
 			this->textBox4 = (gcnew System::Windows::Forms::TextBox());
 			this->numericUpDown4 = (gcnew System::Windows::Forms::NumericUpDown());
-			this->Месяц = (gcnew System::Windows::Forms::Label());
+			this->ГЊГҐГ±ГїГ¶ = (gcnew System::Windows::Forms::Label());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->numericUpDown2))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
@@ -132,7 +132,7 @@ namespace CalculatorCR {
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(138, 39);
 			this->button1->TabIndex = 0;
-			this->button1->Text = L"Рассчитать ";
+			this->button1->Text = L"Р Р°СЃСЃС‡РёС‚Р°С‚СЊ ";
 			this->button1->UseVisualStyleBackColor = true;
 			this->button1->Click += gcnew System::EventHandler(this, &MyForm::button1_Click);
 			// 
@@ -203,7 +203,7 @@ namespace CalculatorCR {
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(167, 17);
 			this->label1->TabIndex = 9;
-			this->label1->Text = L"Срок выплаты (Месяцев)";
+			this->label1->Text = L"РЎСЂРѕРє РІС‹РїР»Р°С‚С‹ (РњРµСЃСЏС†РµРІ)";
 			// 
 			// label2
 			// 
@@ -214,7 +214,7 @@ namespace CalculatorCR {
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(146, 17);
 			this->label2->TabIndex = 10;
-			this->label2->Text = L"Ежемесячный платеж";
+			this->label2->Text = L"Р•Р¶РµРјРµСЃСЏС‡РЅС‹Р№ РїР»Р°С‚РµР¶";
 			// 
 			// label3
 			// 
@@ -225,7 +225,7 @@ namespace CalculatorCR {
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(75, 17);
 			this->label3->TabIndex = 11;
-			this->label3->Text = L"Переплата";
+			this->label3->Text = L"РџРµСЂРµРїР»Р°С‚Р°";
 			this->label3->Click += gcnew System::EventHandler(this, &MyForm::label3_Click);
 			// 
 			// textBox1
@@ -261,12 +261,12 @@ namespace CalculatorCR {
 			this->label4->Name = L"label4";
 			this->label4->Size = System::Drawing::Size(146, 17);
 			this->label4->TabIndex = 14;
-			this->label4->Text = L"Общая сумма выплат";
+			this->label4->Text = L"РћР±С‰Р°СЏ СЃСѓРјРјР° РІС‹РїР»Р°С‚";
 			this->label4->Click += gcnew System::EventHandler(this, &MyForm::label4_Click);
 			// 
 			// comboBox1
 			// 
-			this->comboBox1->AutoCompleteCustomSource->AddRange(gcnew cli::array< System::String^  >(2) { L"Аннуитетный платеж", L"Дифференцированный платеж" });
+			this->comboBox1->AutoCompleteCustomSource->AddRange(gcnew cli::array< System::String^  >(2) { L"ГЂГ­Г­ГіГЁГІГҐГІГ­Г»Г© ГЇГ«Г ГІГҐГ¦", L"Г„ГЁГґГґГҐГ°ГҐГ­Г¶ГЁГ°Г®ГўГ Г­Г­Г»Г© ГЇГ«Г ГІГҐГ¦" });
 			this->comboBox1->BackColor = System::Drawing::SystemColors::ActiveCaption;
 			this->comboBox1->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->comboBox1->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
@@ -274,12 +274,12 @@ namespace CalculatorCR {
 				static_cast<System::Byte>(204)));
 			this->comboBox1->FormattingEnabled = true;
 			this->comboBox1->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->comboBox1->Items->AddRange(gcnew cli::array< System::Object^  >(2) { L"Аннуитетный платеж", L"Дифференцированный платеж" });
+			this->comboBox1->Items->AddRange(gcnew cli::array< System::Object^  >(2) { L"РђРЅРЅСѓРёС‚РµС‚РЅС‹Р№ РїР»Р°С‚РµР¶", L"Р”РёС„С„РµСЂРµРЅС†РёСЂРѕРІР°РЅРЅС‹Р№ РїР»Р°С‚РµР¶" });
 			this->comboBox1->Location = System::Drawing::Point(315, 0);
 			this->comboBox1->Name = L"comboBox1";
 			this->comboBox1->Size = System::Drawing::Size(220, 25);
 			this->comboBox1->TabIndex = 16;
-			this->comboBox1->Text = L"Аннуитетный платеж";
+			this->comboBox1->Text = L"ГЂГ­Г­ГіГЁГІГҐГІГ­Г»Г© ГЇГ«Г ГІГҐГ¦";
 			this->comboBox1->SelectedIndexChanged += gcnew System::EventHandler(this, &MyForm::comboBox1_SelectedIndexChanged);
 			this->comboBox1->KeyPress += gcnew System::Windows::Forms::KeyPressEventHandler(this, &MyForm::comboBox1_KeyPress);
 			// 
@@ -292,7 +292,7 @@ namespace CalculatorCR {
 			this->button14->Name = L"button14";
 			this->button14->Size = System::Drawing::Size(138, 39);
 			this->button14->TabIndex = 29;
-			this->button14->Text = L"Сброс";
+			this->button14->Text = L"Г‘ГЎГ°Г®Г±";
 			this->button14->UseVisualStyleBackColor = true;
 			this->button14->Click += gcnew System::EventHandler(this, &MyForm::button14_Click);
 			// 
@@ -332,16 +332,16 @@ namespace CalculatorCR {
 			this->numericUpDown4->TabIndex = 32;
 			this->numericUpDown4->ValueChanged += gcnew System::EventHandler(this, &MyForm::numericUpDown4_ValueChanged_1);
 			// 
-			// Месяц
+			// ГЊГҐГ±ГїГ¶
 			// 
-			this->Месяц->AutoSize = true;
-			this->Месяц->Font = (gcnew System::Drawing::Font(L"Times New Roman", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->ГЊГҐГ±ГїГ¶->AutoSize = true;
+			this->ГЊГҐГ±ГїГ¶->Font = (gcnew System::Drawing::Font(L"Times New Roman", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->Месяц->Location = System::Drawing::Point(240, 390);
-			this->Месяц->Name = L"Месяц";
-			this->Месяц->Size = System::Drawing::Size(53, 19);
-			this->Месяц->TabIndex = 33;
-			this->Месяц->Text = L"Месяц";
+			this->ГЊГҐГ±ГїГ¶->Location = System::Drawing::Point(240, 390);
+			this->ГЊГҐГ±ГїГ¶->Name = L"ГЊГҐГ±ГїГ¶";
+			this->ГЊГҐГ±ГїГ¶->Size = System::Drawing::Size(53, 19);
+			this->ГЊГҐГ±ГїГ¶->TabIndex = 33;
+			this->ГЊГҐГ±ГїГ¶->Text = L"ГЊГҐГ±ГїГ¶";
 			// 
 			// MyForm
 			// 
@@ -349,7 +349,7 @@ namespace CalculatorCR {
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::SystemColors::ActiveCaption;
 			this->ClientSize = System::Drawing::Size(584, 461);
-			this->Controls->Add(this->Месяц);
+			this->Controls->Add(this->ГЊГҐГ±ГїГ¶);
 			this->Controls->Add(this->numericUpDown4);
 			this->Controls->Add(this->textBox4);
 			this->Controls->Add(this->numericUpDown1);
@@ -374,7 +374,7 @@ namespace CalculatorCR {
 			this->MaximumSize = System::Drawing::Size(600, 500);
 			this->MinimumSize = System::Drawing::Size(600, 500);
 			this->Name = L"MyForm";
-			this->Text = L"Калькулятор";
+			this->Text = L"РљР°Р»СЊРєСѓР»СЏС‚РѕСЂ";
 			this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->numericUpDown2))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
@@ -395,7 +395,7 @@ namespace CalculatorCR {
 		Stockholm = System::Convert::ToDouble(numericUpDown4->Value);
 		
 
-		if (comboBox1->Text == "Аннуитетный платеж")
+		if (comboBox1->Text == "РђРЅРЅСѓРёС‚РµС‚РЅС‹Р№ РїР»Р°С‚РµР¶")
 		{
 			z = Interest / 12 / 100;
 			FormulaAN_em = z * pow((1 + z), Months) / (pow((1 + z), Months) - 1);
@@ -422,7 +422,7 @@ namespace CalculatorCR {
 
 
 		}
-		else if (comboBox1->Text == "Дифференцированный платеж")
+		else if (comboBox1->Text == "Р”РёС„С„РµСЂРµРЅС†РёСЂРѕРІР°РЅРЅС‹Р№ РїР»Р°С‚РµР¶")
 		{
 			z = Interest / 12 / 100;
 			FormulaDP_em = (Roubles / Months) + (Roubles * (Interest / 100) / Months);
