@@ -128,7 +128,7 @@ inline void Graph<T>::DELETEVRTX(T& ver)
 {
     if (maxSize == 0 || GetVertPos(ver) == -1)
     {
-        cout << "!!! Невозможно удалить вершину !!!" << endl;
+        cout << "!!! РќРµРІРѕР·РјРѕР¶РЅРѕ СѓРґР°Р»РёС‚СЊ РІРµСЂС€РёРЅСѓ !!!" << endl;
         return;
     }
     for (int j = 0; j < List_of_vertexes.size(); ++j)
@@ -151,7 +151,7 @@ void Graph<T>::DELETEE(const T& vertex1, const T& vertex2) {
     }
     else
     {
-        cout << "Не хватает минимум одной вершины!" << endl;
+        cout << "РќРµ С…РІР°С‚Р°РµС‚ РјРёРЅРёРјСѓРј РѕРґРЅРѕР№ РІРµСЂС€РёРЅС‹!!" << endl;
         return;
     }
 };
@@ -161,7 +161,7 @@ inline void Graph<T>::DRAW()
 {
     const float pi = 3.14159f;
     bool f = false;
-    RenderWindow window(VideoMode(1024, 960), "Набиев Саид РИС-21-1", Style::Close);
+    RenderWindow window(VideoMode(1024, 960), "РќР°Р±РёРµРІ РЎР°РёРґ Р РРЎ-21-1", Style::Close);
     while (window.isOpen())
     {
         Event event;
@@ -190,7 +190,7 @@ inline void Graph<T>::DRAW()
         min_path_txt.setFont(font);
         min_path_txt.setFillColor(Color::White);
         min_path_txt.setCharacterSize(20);
-        min_path_txt.setString("Минимальный путь: ");
+        min_path_txt.setString("РњРёРЅРёРјР°Р»СЊРЅС‹Р№ РїСѓС‚СЊ: ");
         Text hmin_text;
 
         hmin_text.setPosition(200.f, 900.f);
@@ -209,7 +209,7 @@ inline void Graph<T>::DRAW()
                     if (Add_Circle.getGlobalBounds().contains(mouse_pos.x, mouse_pos.y))
                     {
                         string h; cout << endl;
-                        cout << "Введите вершину -> ";
+                        cout << "Р’РІРµРґРёС‚Рµ РІРµСЂС€РёРЅСѓ -> ";
                         cin >> h;
                         this->ADD(h, (List_of_vertexes.size() + 1));
                         this->Print();
@@ -222,7 +222,7 @@ inline void Graph<T>::DRAW()
                     {
                         string x, y;
                         int h;cout << endl;
-                        cout << "Введите вершины и номер пути -> ";
+                        cout << "Р’РІРµРґРёС‚Рµ РІРµСЂС€РёРЅС‹ Рё РЅРѕРјРµСЂ РїСѓС‚Рё ->";
                         cin >> x >> y >> h;
                         this->InsertEdge(x, y, h);
                         this->Print();
@@ -234,7 +234,7 @@ inline void Graph<T>::DRAW()
                     if (Delete_Circle.getGlobalBounds().contains(mouse_pos.x, mouse_pos.y))
                     {
                         string ver; cout << endl;
-                        cout << "Введите вершину для удаления -> ";
+                        cout << "Р’РІРµРґРёС‚Рµ РІРµСЂС€РёРЅСѓ РґР»СЏ СѓРґР°Р»РµРЅРёСЏ -> ";
                         cin >> ver;
                         this->DELETEVRTX(ver);
                         this->Print();
@@ -246,7 +246,7 @@ inline void Graph<T>::DRAW()
                     if (Find_Path.getGlobalBounds().contains(mouse_pos.x, mouse_pos.y))
                     {
                         string ver; cout << endl;
-                        cout << "Введите вершину с которой начнётся путь -> ";
+                        cout << "Р’РІРµРґРёС‚Рµ РІРµСЂС€РёРЅСѓ СЃ РєРѕС‚РѕСЂРѕР№ РЅР°С‡РЅС‘С‚СЃСЏ РїСѓС‚СЊ ->  ";
                         cin >> ver;
                         this->hz(this->GetVertPos(ver));
                         cout << this->rec << endl;
@@ -262,7 +262,7 @@ inline void Graph<T>::DRAW()
                     if (Delete_Path.getGlobalBounds().contains(mouse_pos.x, mouse_pos.y))
                     {
                         string x, y; cout << endl;
-                        cout << "Введите пути, которые надо удалить -> ";
+                        cout << "Р’РІРµРґРёС‚Рµ РїСѓС‚Рё, РєРѕС‚РѕСЂС‹Рµ РЅР°РґРѕ СѓРґР°Р»РёС‚СЊ ->";
                         cin >> x >> y;
                         this->DELETEE(x, y);
                         this->Print();
@@ -275,35 +275,35 @@ inline void Graph<T>::DRAW()
         name_text.setFont(font);
         name_text.setFillColor(Color::White);
         name_text.setCharacterSize(20);
-        name_text.setString("Добавить вершину");
+        name_text.setString("Р”РѕР±Р°РІРёС‚СЊ РІРµСЂС€РёРЅСѓ");
 
         Text name1_text;
         name1_text.setPosition(810.f, 310.f);
         name1_text.setFont(font);
         name1_text.setFillColor(Color::White);
         name1_text.setCharacterSize(20);
-        name1_text.setString("Добавить путь");
+        name1_text.setString("Р”РѕР±Р°РІРёС‚СЊ РїСѓС‚СЊ");
 
         Text name2_text;
         name2_text.setPosition(810.f, 410.f);
         name2_text.setFont(font);
         name2_text.setFillColor(Color::White);
         name2_text.setCharacterSize(20);
-        name2_text.setString("Удалить вершину");
+        name2_text.setString("РЈРґР°Р»РёС‚СЊ РІРµСЂС€РёРЅСѓ");
 
         Text name3_text;
         name3_text.setPosition(810.f, 510.f);
         name3_text.setFont(font);
         name3_text.setFillColor(Color::White);
         name3_text.setCharacterSize(20);
-        name3_text.setString("Удалить путь");
+        name3_text.setString("РЈРґР°Р»РёС‚СЊ РїСѓС‚СЊ");
 
         Text name4_text;
         name4_text.setPosition(810.f, 610.f);
         name4_text.setFont(font);
         name4_text.setFillColor(Color::White);
         name4_text.setCharacterSize(20);
-        name4_text.setString("Найти кратчайший путь");
+        name4_text.setString("РќР°Р№С‚Рё РєСЂР°С‚С‡Р°Р№С€РёР№ РїСѓС‚СЊ");
 
         circle.setFillColor(sf::Color(0, 128, 128));
         circle.setRadius(40.f);
@@ -491,7 +491,7 @@ inline void Graph<T>::insertVertex(const T& vert)
 {
     if (this->FullTub())
     {
-        cout << "Невозможно добавить вершину !!!" << endl;
+        cout << "РќРµРІРѕР·РјРѕР¶РЅРѕ РґРѕР±Р°РІРёС‚СЊ РІРµСЂС€РёРЅСѓ !!!" << endl;
         return;
     };
     this->List_of_vertexes.push_back(vert);
@@ -522,7 +522,7 @@ inline int Graph<T>::GetWeight(const T& v1, const T& v2)
     int v2_p = this->GetVertPos(v2);
     if (v1_p == -1 || v2_p == -1)
     {
-        cout << "Одного или нескольких узлов не существует !" << endl;
+        cout << "РћРґРЅРѕРіРѕ РёР»Рё РЅРµСЃРєРѕР»СЊРєРёС… СѓР·Р»РѕРІ РЅРµ СЃСѓС‰РµСЃС‚РІСѓРµС‚ !" << endl;
         return 0;
     };
     return this->Matrix[v1_p][v2_p];
@@ -549,7 +549,7 @@ void Graph<T>::InsertEdge(const T& vertex1, const T& vertex2, int weight) {
 
         if (this->Matrix[vertPos1][vertPos2] != 0)
         {
-            cout << "Ребро между вершинами уже есть" << endl;
+            cout << "Р РµР±СЂРѕ РјРµР¶РґСѓ РІРµСЂС€РёРЅР°РјРё СѓР¶Рµ РµСЃС‚СЊ" << endl;
             return;
         }
         else
@@ -560,7 +560,7 @@ void Graph<T>::InsertEdge(const T& vertex1, const T& vertex2, int weight) {
     }
     else
     {
-        cout << "Одного или нескольких узлов не существует ! " << endl;
+        cout << "РћРґРЅРѕРіРѕ РёР»Рё РЅРµСЃРєРѕР»СЊРєРёС… СѓР·Р»РѕРІ РЅРµ СЃСѓС‰РµСЃС‚РІСѓРµС‚ ! " << endl;
         return;
     }
 };
@@ -568,7 +568,7 @@ template<class T>
 void Graph<T>::Print() {
     if (!this->Emptiness())
     {
-        cout << "Ваша матрица смежности для графа :) : " << endl;
+        cout << "Р’Р°С€Р° РјР°С‚СЂРёС†Р° СЃРјРµР¶РЅРѕСЃС‚Рё РґР»СЏ РіСЂР°С„Р° :) : " << endl;
         cout << "0  ";
         for (int i = 0; i < List_of_vertexes.size(); ++i)
         {
@@ -586,7 +586,7 @@ void Graph<T>::Print() {
         }
     }
     else 
-        cout << "Похоже граф пуст :( " << endl;
+        cout << "РџРѕС…РѕР¶Рµ РіСЂР°С„ РїСѓСЃС‚ :( " << endl;
 }
 int main()
 {
@@ -595,23 +595,23 @@ int main()
     locale::global(locale(""));
     cout.imbue(locale());
     int F2, TTyTb; string vertex, Start, End;
-    cout << " Количество вершин -> "; cin >> F2; cout << endl;
-    cout << " Количество граф -> "; cin >> F1; cout << endl;
+    cout << " РљРѕР»РёС‡РµСЃС‚РІРѕ РІРµСЂС€РёРЅ -> "; cin >> F2; cout << endl;
+    cout << " РљРѕР»РёС‡РµСЃС‚РІРѕ РіСЂР°С„ -> "; cin >> F1; cout << endl;
     Graph<string> p(F2);
     Graph<string> g(20);
     p.ShowM();
     for (int i = 0; i < F2; ++i)
     {
-        cout << " Вершина -> "; cin >> vertex;
+        cout << " Р’РµСЂС€РёРЅР° -> "; cin >> vertex;
         p.insertVertex(vertex);
         g.insertVertex(vertex);
         cout << endl;
     }
     for (int i = 0; i < F1; ++i)
     {
-        cout << " Начальная -> "; cin >> Start; cout << endl;
-        cout << " Конечная -> "; cin >> End; cout << endl;
-        cout << " Номер пути -> "; cin >> TTyTb; cout << endl;
+        cout << " РќР°С‡Р°Р»СЊРЅР°СЏ -> "; cin >> Start; cout << endl;
+        cout << " РљРѕРЅРµС‡РЅР°СЏ -> "; cin >> End; cout << endl;
+        cout << " РќРѕРјРµСЂ РїСѓС‚Рё -> "; cin >> TTyTb; cout << endl;
         string* end_vert = &End;
         p.InsertEdge(Start, End, TTyTb);
         g.InsertEdge(Start, End, TTyTb);
